@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "semantic-engine"
+version = "1.0.0"
+description = "Deterministic semantic transformation pipeline: NL → IR → Boolean → Latin → SUBLEQ → Artifact"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+bert = ["transformers>=4.40", "torch>=2.0"]
+dev  = ["pytest>=8", "pytest-cov"]
+
+[project.scripts]
+semantic-engine = "cli.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"

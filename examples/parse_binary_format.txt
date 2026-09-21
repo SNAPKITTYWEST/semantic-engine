@@ -1,0 +1,1 @@
+build a parser for this binary format deterministically

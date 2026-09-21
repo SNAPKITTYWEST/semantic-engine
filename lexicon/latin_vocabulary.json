@@ -1,0 +1,33 @@
+{
+  "_comment": "Controlled Latin vocabulary. Every lexeme maps to a stable semantic_id. No synonyms permitted at this stage.",
+  "lexemes": {
+    "ET":          { "semantic_id": "BOOL_AND",          "operator": "AND",          "arity": 2 },
+    "VEL":         { "semantic_id": "BOOL_OR",           "operator": "OR",           "arity": 2 },
+    "NON":         { "semantic_id": "BOOL_NOT",          "operator": "NOT",          "arity": 1 },
+    "AUT":         { "semantic_id": "BOOL_XOR",          "operator": "XOR",          "arity": 2 },
+    "SI":          { "semantic_id": "BOOL_IMPLIES",      "operator": "IMPLIES",      "arity": 2 },
+    "IFF":         { "semantic_id": "BOOL_EQUIV",        "operator": "EQUIVALENCE",  "arity": 2 },
+    "VERUM":       { "semantic_id": "BOOL_TRUE",         "operator": "TRUE",         "arity": 0 },
+    "FALSUM":      { "semantic_id": "BOOL_FALSE",        "operator": "FALSE",        "arity": 0 },
+    "INITIUM":     { "semantic_id": "DELIM_OPEN",        "operator": null,           "arity": 0 },
+    "FINIS":       { "semantic_id": "DELIM_CLOSE",       "operator": null,           "arity": 0 },
+    "OPUS":        { "semantic_id": "SEMANTIC_OP",       "operator": null,           "arity": -1 },
+    "FORMA":       { "semantic_id": "SEMANTIC_MATRIX",   "operator": null,           "arity": -1 },
+    "TEMPUS":      { "semantic_id": "TEMPORAL_STATE",    "operator": null,           "arity": 0 },
+    "COMPUTA":     { "semantic_id": "OP_COMPUTE",        "operator": "compute",      "arity": 1 },
+    "MULTIPLICA":  { "semantic_id": "OP_MULTIPLY",       "operator": "multiply",     "arity": 2 },
+    "ADDE":        { "semantic_id": "OP_ADD",            "operator": "add",          "arity": 2 },
+    "SUBTRAHE":    { "semantic_id": "OP_SUBTRACT",       "operator": "subtract",     "arity": 2 },
+    "PARSE":       { "semantic_id": "OP_PARSE",          "operator": "parse",        "arity": 1 },
+    "AEDIFICA":    { "semantic_id": "OP_BUILD",          "operator": "build",        "arity": 1 },
+    "GENERA":      { "semantic_id": "OP_GENERATE",       "operator": "generate",     "arity": 1 },
+    "VERIFICA":    { "semantic_id": "OP_VALIDATE",       "operator": "validate",     "arity": 1 },
+    "CONVERTE":    { "semantic_id": "OP_TRANSFORM",      "operator": "transform",    "arity": 2 },
+    "RESTITUE":    { "semantic_id": "OP_RECONSTRUCT",    "operator": "reconstruct",  "arity": 1 },
+    "MATRIX":      { "semantic_id": "ENTITY_MATRIX",     "operator": null,           "arity": 0 },
+    "VECTOR":      { "semantic_id": "ENTITY_VECTOR",     "operator": null,           "arity": 0 },
+    "PARSER":      { "semantic_id": "ENTITY_PARSER",     "operator": null,           "arity": 0 },
+    "SERVITIUM":   { "semantic_id": "ENTITY_SERVICE",    "operator": null,           "arity": 0 },
+    "FORMA_BINARIA": { "semantic_id": "ENTITY_BINARY_FORMAT", "operator": null,      "arity": 0 }
+  }
+}

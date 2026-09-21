@@ -1,0 +1,29 @@
+{
+  "_comment": "Rosetta mapping: semantic_id → SUBLEQ operation template. Only canonical vocabulary may reach this layer.",
+  "mappings": {
+    "BOOL_AND":          { "subleq_op": "AND",      "template": "subleq_and",      "args": ["a", "b", "out"] },
+    "BOOL_OR":           { "subleq_op": "OR",       "template": "subleq_or",       "args": ["a", "b", "out"] },
+    "BOOL_NOT":          { "subleq_op": "NOT",      "template": "subleq_not",      "args": ["a", "out"] },
+    "BOOL_XOR":          { "subleq_op": "XOR",      "template": "subleq_xor",      "args": ["a", "b", "out"] },
+    "BOOL_IMPLIES":      { "subleq_op": "OR",       "template": "subleq_or",       "args": ["not_a", "b", "out"] },
+    "BOOL_EQUIV":        { "subleq_op": "XNOR",     "template": "subleq_xnor",     "args": ["a", "b", "out"] },
+    "BOOL_TRUE":         { "subleq_op": "LOAD_1",   "template": "subleq_load",     "args": ["1", "out"] },
+    "BOOL_FALSE":        { "subleq_op": "LOAD_0",   "template": "subleq_load",     "args": ["0", "out"] },
+    "SEMANTIC_OP":       { "subleq_op": "NOP",      "template": "subleq_nop",      "args": [] },
+    "OP_COMPUTE":        { "subleq_op": "COMPUTE",  "template": "subleq_compute",  "args": ["a", "out"] },
+    "OP_MULTIPLY":       { "subleq_op": "MUL",      "template": "subleq_mul",      "args": ["a", "b", "out"] },
+    "OP_ADD":            { "subleq_op": "ADD",      "template": "subleq_add",      "args": ["a", "b", "out"] },
+    "OP_SUBTRACT":       { "subleq_op": "SUB",      "template": "subleq_sub",      "args": ["a", "b", "out"] },
+    "OP_PARSE":          { "subleq_op": "PARSE",    "template": "subleq_parse",    "args": ["src", "out"] },
+    "OP_BUILD":          { "subleq_op": "BUILD",    "template": "subleq_build",    "args": ["spec", "out"] },
+    "OP_GENERATE":       { "subleq_op": "GEN",      "template": "subleq_gen",      "args": ["spec", "out"] },
+    "OP_VALIDATE":       { "subleq_op": "VERIFY",   "template": "subleq_verify",   "args": ["a", "spec"] },
+    "OP_TRANSFORM":      { "subleq_op": "XFORM",    "template": "subleq_xform",    "args": ["a", "b", "out"] },
+    "OP_RECONSTRUCT":    { "subleq_op": "RECON",    "template": "subleq_recon",    "args": ["spec", "out"] },
+    "ENTITY_MATRIX":     { "subleq_op": "ALLOC",    "template": "subleq_alloc",    "args": ["rows", "cols", "out"] },
+    "ENTITY_VECTOR":     { "subleq_op": "ALLOC",    "template": "subleq_alloc",    "args": ["n", "1", "out"] },
+    "TEMPORAL_STATE":    { "subleq_op": "TICK",     "template": "subleq_tick",     "args": ["tau", "out"] },
+    "DELIM_OPEN":        { "subleq_op": "PUSH",     "template": "subleq_push",     "args": [] },
+    "DELIM_CLOSE":       { "subleq_op": "POP",      "template": "subleq_pop",      "args": [] }
+  }
+}

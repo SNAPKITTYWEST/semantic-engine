@@ -12,7 +12,7 @@ License: MPL-2.0
 
 This work is licensed under dual license terms:
 
-  Apache-2.0 OR GPL-3.0-or-later
+ MPL-2.0 OR GPL-3.0-or-later
 
 With additional Sovereign Leviathan Node License terms (AGPL-3.0 base).
 Source files are individually licensed under MPL-2.0 (file-level copyleft).
